@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+a {
+  @apply underline-offset-2;
+}
+
+.visually-hidden {
+  @apply sr-only;
+}
+
+/* Numeric values read better in a monospaced face — figures, not prose. */
+.font-figures {
+  @apply font-mono tabular-nums;
+}
